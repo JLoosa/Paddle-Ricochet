@@ -1,10 +1,9 @@
-# p5-DoublePong
-DoublePong is a game, built using the p5.js library, is a variation of Ping-Pong crossed with Breakout.
+Paddle Ricochet is a variant of the classic Atari game, Pong. It is intended to be used by new as a way of practicing my skills in Javascript. This is not intended to infringe on any copywrites and, to that extent, the project has been renamed to "Paddle Ricochet" to further distance itself from the original title.
 
-This game supports one player and a single AI player. A multiplayer variation may be created in the future.
-
-HOW TO PLAY:
-  Using your paddle, redirect the ball on your side into each of the blocks in front of you.
-  Upon breaking a hole in the blocks, you will be able to send the ball through  to your opponent's side.
-  The first player to miss the ball and have it enter the "goal" on their side loses.
+What is Paddle Ricochet:
+  Paddle Ricochet is a 2D, symmetric, soccer-like game with the objective of "scoring" on your opponent. The game takes place in a bounded, rectangular area. The "player" takes the form of a "paddle," which is a 2D, rectangular bow that can move along a single, vertical axis. The field is split into two sections by a row of "barrier" tiles that act as temporary walls. Each side will have a paddle, with one being the human player and the other being the computer player. When the game begins, a "ball" will be placed in the center of each section and will propelled toward the paddle on their respective side. It is the objective of each player to use their paddle to bounce the ball into the barriers in the middle until a hole is formed. Once a hole appears, each player should make an attempt to aim their paddle in such a way that they cause the ball on their side to move over to their opponent's side, as this make the game easier for them and harder for their opponent.
   
+  To add to the complexity of the game, the human player may choose to enable "Regenerative barriers." When this setting is enabled, damaged and destroyed barriers on the field will slowly be regenerated until they have been restored to their original state. The alternative options for this would be "Degenerative barriers," which causes the barriers on the field to slowly decay until their on none left. Note that, without barriers, Paddle Ricochet may feel similar to the game Pong, but with two balls. This is not the intended way to play this game.
+
+Scoring points in Paddle Ricochet:
+  To score a point in Paddle Ricochet, the opposing player must fail to use their paddle to prevent the a ball in their section from reaching the end of the screen. This is to say that, the only way to score is for your opponent to make a mistake, and that there are no other ways to gain points. In the event that a player fails to block the ball, a point will be granted to the opposing team. The game is draw when it reaches a predetermined total score, which means that this game works best in First-to-X based scoring schemes.
